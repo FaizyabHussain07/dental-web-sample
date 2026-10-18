@@ -2,7 +2,7 @@ const form = document.querySelector(".appointment-form");
 const status = document.querySelector(".form-status");
 const submitButton = form.querySelector(".form-submit");
 const submitButtonLabel = submitButton.firstChild;
-const submissionEndpoint = "https://formivo-three.vercel.app/api/v1/forms/frm_bfb9d29425b3574f27/submissions";
+const submissionEndpoint = "POST http://localhost:3000/api/v1/forms/frm_bfb9d29425b3574f27/submissions";
 const submissionToken = "frm_bfb9d29425b3574f27";
 
 form.addEventListener("submit", async (event) => {
