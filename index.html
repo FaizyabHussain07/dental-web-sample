@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DentalWeb provides gentle, modern dental care for the whole family." />
+  <title>DentalWeb | Confident smiles start here</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#" aria-label="DentalWeb home">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>Dental<span>Web</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#care">Our care</a>
+        <a href="#about">Why DentalWeb</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a class="button button-small" href="#appointment">Book a visit <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Modern care. Human touch.</p>
+        <h1>Your healthiest smile <em>starts here.</em></h1>
+        <p class="hero-text">Friendly, thoughtful dentistry for every stage of life. Feel good about your care and leave with a smile you love.</p>
+        <div class="hero-actions">
+          <a class="button" href="#appointment">Make an appointment <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#care">Explore our care <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="review-note">
+          <div class="avatar-stack" aria-hidden="true"><span>J</span><span>M</span><span>A</span></div>
+          <div><strong>4.9/5</strong><span>Loved by 2,000+ patients</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Smiling DentalWeb patient">
+        <div class="sun-shape"></div>
+        <div class="hero-image">
+          <div class="smile-card"><span class="smile-icon">☻</span><span>Smile with confidence</span></div>
+        </div>
+        <div class="float-card float-card-top"><span class="check-icon">✓</span><span><strong>Gentle care</strong><small>Every single visit</small></span></div>
+        <div class="float-card float-card-bottom"><strong>20+</strong><span>Years of<br />bright smiles</span></div>
+      </div>
+    </section>
+
+    <section class="trust-bar">
+      <div class="container trust-items">
+        <span>Trusted by families across the city</span>
+        <div class="trust-badges"><span>✦ <b>INVISALIGN</b></span><span>◉ <b>ADA</b> MEMBER</span><span>✚ <b>CareCredit</b></span></div>
+      </div>
+    </section>
+
+    <section class="care-section container" id="care">
+      <div class="section-heading">
+        <p class="eyebrow">Care that fits your life</p>
+        <h2>Everything your smile needs, <em>all in one place.</em></h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-card service-card-featured">
+          <span class="service-number">01</span>
+          <div class="service-icon">✦</div>
+          <h3>General dentistry</h3>
+          <p>Preventive care and gentle treatment to keep your smile healthy for years to come.</p>
+          <a href="#appointment" aria-label="Learn more about general dentistry">Learn more <span>↗</span></a>
+        </article>
+        <article class="service-card">
+          <span class="service-number">02</span>
+          <div class="service-icon">◒</div>
+          <h3>Cosmetic smiles</h3>
+          <p>Small changes can make a big difference. Discover a smile that feels like you.</p>
+          <a href="#appointment" aria-label="Learn more about cosmetic smiles">Learn more <span>↗</span></a>
+        </article>
+        <article class="service-card">
+          <span class="service-number">03</span>
+          <div class="service-icon">⌁</div>
+          <h3>Restorative care</h3>
+          <p>Comfort-first solutions that restore your confidence, function, and quality of life.</p>
+          <a href="#appointment" aria-label="Learn more about restorative care">Learn more <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="appointment-section" id="appointment">
+      <div class="container appointment-layout">
+        <div class="appointment-copy">
+          <p class="eyebrow">Your next smile moment</p>
+          <h2>Let’s make time for <em>your smile.</em></h2>
+          <p>Tell us a little about yourself and our care team will be in touch within one business day.</p>
+          <div class="contact-detail"><span>✆</span><div><small>Call us directly</small><strong>(555) 014-2024</strong></div></div>
+          <div class="contact-detail"><span>⌖</span><div><small>Find us</small><strong>24 Willow Lane, Suite 100</strong></div></div>
+        </div>
+        <form class="appointment-form" id="contact" novalidate>
+          <div class="form-row">
+            <label>First name<input type="text" name="firstName" placeholder="Jane" required /></label>
+            <label>Last name<input type="text" name="lastName" placeholder="Smith" required /></label>
+          </div>
+          <label>Email address<input type="email" name="email" placeholder="jane@example.com" required /></label>
+          <label>What can we help with?
+            <select name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option>General dentistry</option>
+              <option>Cosmetic smiles</option>
+              <option>Restorative care</option>
+              <option>I'm not sure yet</option>
+            </select>
+          </label>
+          <button class="button form-submit" type="submit">Request an appointment <span aria-hidden="true">↗</span></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <small class="form-note">By submitting, you agree to receive a call or email from DentalWeb.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="about">
+    <div class="container footer-inner">
+      <a class="brand" href="#"><span class="brand-mark" aria-hidden="true">✦</span><span>Dental<span>Web</span></span></a>
+      <p>Better care. Brighter smiles.</p>
+      <small>© 2024 DentalWeb. All rights reserved.</small>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

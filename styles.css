@@ -1,0 +1,58 @@
+:root {
+  --ink: #173b3a;
+  --muted: #66807d;
+  --cream: #f8f7f2;
+  --mint: #d9eee7;
+  --mint-dark: #a9d9cb;
+  --orange: #ec795e;
+  --line: #dce8e3;
+  --white: #ffffff;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: var(--cream); font-family: "DM Sans", sans-serif; }
+a { color: inherit; text-decoration: none; }
+.container { width: min(1160px, calc(100% - 48px)); margin: 0 auto; }
+.site-header { background: var(--cream); }
+.nav { display: flex; align-items: center; justify-content: space-between; height: 86px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-size: 22px; font-weight: 700; letter-spacing: -.04em; }
+.brand > span:last-child > span { color: var(--orange); }
+.brand-mark { display: grid; place-items: center; width: 29px; height: 29px; color: var(--white); background: var(--orange); border-radius: 9px 9px 9px 2px; font-size: 16px; }
+.nav-links { display: flex; gap: 34px; margin-left: auto; margin-right: 38px; color: var(--muted); font-size: 14px; }
+.nav-links a:hover, .text-link:hover { color: var(--orange); }
+.button { display: inline-flex; justify-content: center; align-items: center; gap: 12px; padding: 15px 22px; border: 0; border-radius: 5px; color: var(--white); background: var(--ink); font: 600 14px "DM Sans", sans-serif; cursor: pointer; transition: transform .2s, background .2s; }
+.button:hover { background: var(--orange); transform: translateY(-2px); }
+.button:disabled { cursor: wait; opacity: .7; transform: none; }
+.button-small { padding: 11px 17px; font-size: 13px; }
+.hero { display: grid; grid-template-columns: 48% 52%; min-height: 590px; align-items: center; padding-top: 42px; padding-bottom: 70px; }
+.eyebrow { display: flex; align-items: center; gap: 8px; margin: 0 0 20px; color: var(--orange); font-size: 11px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.eyebrow-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--orange); }
+h1, h2 { margin: 0; font-family: "Playfair Display", serif; font-weight: 700; letter-spacing: -.055em; line-height: 1.03; }
+h1 { max-width: 520px; font-size: clamp(52px, 6vw, 78px); }
+h1 em, h2 em { color: var(--orange); font-style: normal; }
+.hero-text { max-width: 425px; margin: 25px 0 30px; color: var(--muted); font-size: 16px; line-height: 1.7; }
+.hero-actions { display: flex; align-items: center; gap: 27px; }
+.text-link { color: var(--ink); font-size: 14px; font-weight: 600; }
+.text-link span { margin-left: 8px; color: var(--orange); }
+.review-note { display: flex; align-items: center; gap: 12px; margin-top: 50px; font-size: 13px; }
+.review-note strong, .review-note span { display: block; }
+.review-note strong { margin-bottom: 3px; font-size: 14px; }
+.review-note span { color: var(--muted); }
+.avatar-stack { display: flex; }
+.avatar-stack span { display: grid; place-items: center; width: 29px; height: 29px; margin-left: -6px; border: 2px solid var(--cream); border-radius: 50%; color: var(--white); background: #9ebeb3; font-size: 10px; }
+.avatar-stack span:first-child { margin-left: 0; background: #df967f; }.avatar-stack span:last-child { background: #557d7a; }
+.hero-visual { position: relative; min-height: 520px; }
+.sun-shape { position: absolute; top: 22px; left: 50%; width: 430px; height: 430px; transform: translateX(-50%); border-radius: 50%; background: var(--mint); }
+.hero-image { position: absolute; bottom: 0; left: 50%; width: 355px; height: 475px; transform: translateX(-50%); border-radius: 180px 180px 7px 7px; background: linear-gradient(145deg, rgba(41, 98, 89, .08), rgba(29, 81, 76, .4)), url("https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=700&q=85") center/cover; overflow: hidden; }
+.smile-card { position: absolute; bottom: 21px; left: 20px; display: flex; align-items: center; gap: 9px; padding: 10px 14px; border-radius: 5px; color: var(--ink); background: rgba(255,255,255,.92); font-size: 11px; font-weight: 700; }
+.smile-icon { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; color: var(--white); background: var(--orange); font-size: 14px; }
+.float-card { position: absolute; display: flex; align-items: center; gap: 10px; padding: 13px; border-radius: 6px; box-shadow: 0 14px 30px rgba(25, 65, 60, .1); background: var(--white); font-size: 12px; }
+.float-card strong, .float-card small { display: block; }.float-card small { margin-top: 3px; color: var(--muted); font-size: 10px; }.float-card-top { top: 116px; right: 15px; }.float-card-bottom { bottom: 32px; left: 15px; padding: 17px; gap: 12px; }.float-card-bottom strong { color: var(--orange); font: 700 26px "Playfair Display", serif; }.float-card-bottom span { color: var(--muted); font-size: 10px; line-height: 1.4; }.check-icon { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; color: var(--ink); background: var(--mint); font-weight: 700; }
+.trust-bar { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #f3f7f3; }.trust-items { display: flex; align-items: center; justify-content: space-between; min-height: 86px; color: var(--muted); font-size: 12px; }.trust-badges { display: flex; gap: 38px; align-items: center; color: #88a29b; }.trust-badges b { color: var(--ink); font-size: 12px; }
+.care-section { padding-top: 105px; padding-bottom: 115px; }.section-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 47px; }.section-heading h2 { max-width: 500px; font-size: 43px; }.section-heading .eyebrow { margin-bottom: 8px; }
+.service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }.service-card { min-height: 280px; padding: 26px; border: 1px solid var(--line); border-radius: 6px; background: transparent; transition: transform .2s, box-shadow .2s; }.service-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(25, 65, 60, .08); }.service-card-featured { border-color: transparent; background: var(--mint); }.service-number { float: right; color: var(--muted); font-size: 11px; }.service-icon { margin: 22px 0 21px; color: var(--orange); font-size: 28px; }.service-card h3 { margin: 0 0 11px; font-size: 18px; }.service-card p { max-width: 280px; margin: 0 0 25px; color: var(--muted); font-size: 13px; line-height: 1.6; }.service-card a { font-size: 12px; font-weight: 700; }.service-card a span { margin-left: 8px; color: var(--orange); }
+.appointment-section { padding: 95px 0; background: var(--mint); }.appointment-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }.appointment-copy h2 { max-width: 430px; font-size: 53px; }.appointment-copy > p:not(.eyebrow) { max-width: 410px; margin: 23px 0 36px; color: var(--muted); font-size: 15px; line-height: 1.7; }.contact-detail { display: flex; align-items: center; gap: 13px; margin-top: 19px; }.contact-detail > span { display: grid; place-items: center; width: 35px; height: 35px; border-radius: 50%; color: var(--orange); background: var(--white); }.contact-detail small, .contact-detail strong { display: block; }.contact-detail small { margin-bottom: 4px; color: var(--muted); font-size: 10px; }.contact-detail strong { font-size: 13px; }
+.appointment-form { padding: 35px; border-radius: 7px; background: var(--white); box-shadow: 0 20px 40px rgba(30, 75, 67, .08); }.appointment-form label { display: block; margin-bottom: 18px; color: var(--ink); font-size: 11px; font-weight: 700; }.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }.appointment-form input, .appointment-form select { width: 100%; margin-top: 8px; padding: 13px 12px; border: 1px solid var(--line); border-radius: 3px; outline: none; color: var(--ink); background: #fbfcfa; font: 13px "DM Sans", sans-serif; }.appointment-form input:focus, .appointment-form select:focus { border-color: var(--orange); }.form-submit { width: 100%; margin-top: 5px; }.form-note { display: block; margin-top: 14px; color: var(--muted); font-size: 10px; text-align: center; }.form-status { min-height: 18px; margin: 10px 0 0; color: #36715e; font-size: 12px; text-align: center; }
+.site-footer { padding: 35px 0; background: var(--ink); color: var(--white); }.footer-inner { display: flex; align-items: center; justify-content: space-between; }.footer-inner .brand-mark { color: var(--ink); background: var(--mint); }.footer-inner p, .footer-inner small { color: #a2bfba; font-size: 11px; }.footer-inner .brand > span:last-child > span { color: var(--mint-dark); }
+@media (max-width: 760px) { .container { width: min(100% - 34px, 560px); }.nav { height: 72px; }.nav-links { display: none; }.hero { display: block; padding-top: 60px; }.hero-text { font-size: 15px; }.hero-visual { min-height: 460px; margin-top: 35px; }.sun-shape { width: 330px; height: 330px; }.hero-image { width: 285px; height: 410px; }.float-card-top { right: 0; top: 80px; }.float-card-bottom { left: 0; bottom: 14px; }.trust-items { display: block; padding: 23px 0; text-align: center; }.trust-badges { justify-content: center; gap: 15px; margin-top: 16px; flex-wrap: wrap; }.trust-badges span { font-size: 10px; }.trust-badges b { font-size: 10px; }.care-section { padding: 75px 0; }.section-heading { display: block; }.section-heading h2 { font-size: 37px; }.service-grid { grid-template-columns: 1fr; }.service-card { min-height: auto; }.appointment-section { padding: 70px 0; }.appointment-layout { grid-template-columns: 1fr; gap: 40px; }.appointment-copy h2 { font-size: 43px; }.appointment-form { padding: 23px 20px; }.footer-inner { display: grid; gap: 14px; }.footer-inner p, .footer-inner small { margin: 0; } }
